@@ -97,7 +97,7 @@ class Changer {
 		}
 	};
 
-	// копирует переданный элемент
+	// копирует переданный элемент или сохраняет в this.currentElement и вызывает this.paste
 	clone() {
 		this.currentElement = document.querySelector(this.element);
 		this.cloning ? this.currentElement = this.currentElement.cloneNode(true) : false;

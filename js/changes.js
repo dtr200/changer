@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			'before': '',
 			'clone': false
 		},
-		{
+		{	// creating a search button
 			'container': 'form#yith-ajaxsearchform div',
 			'containerPosition': 0,
 			'element': '',
@@ -59,8 +59,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			'insertHTML': [{
 				'element': ['#site-detail', '.wrap .header-right'],
 				'clone': true,
-				'before': '',
-				//'container': ''
+				'before': ''
 			}]
 		},
 		{
@@ -93,7 +92,7 @@ window.addEventListener('DOMContentLoaded', function () {
 		},
 		{
 			'ul': '#main > ul',
-			'location': false, //add className to ul based on url search tail
+			'location': false, //adding a className to the ul based on the url search tail
 			'class': ['brandlist-wmj'],
 			'filtredClass': [],
 			'checkUL': 'body.product-template-default',
@@ -101,19 +100,19 @@ window.addEventListener('DOMContentLoaded', function () {
 		},
 		{
 			'ul': '#main > ul',
-			'location': true, //add className to ul based on url search tail
+			'location': true, //adding a className to the ul based on the url search tail
 			'class': [],
 			'filtredClass': ['brandlist-filtred', 'filtred-wmj'],
 			'checkUL': 'body.product-template-default',
 			'contains': 'wm-subcategory-items'
 		},
 		{
-			'classElement': 'ul.wm-subcategory-items', //Add class with conditions
+			'classElement': 'ul.wm-subcategory-items', //Adding a class with conditions
 			'exist': ['body.home', 'body.product-template-default'],
 			'class': ['subcat-wmj']
 		},
 		{
-			'container': '#main', //
+			'container': '#main', // Creating a container for the filtered items
 			'containerPosition': 0,
 			'element': '',
 			'before': '#main ul.products',
@@ -164,7 +163,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				}]
 			}]
 		},
-		{
+		{ // adding a class to an element
 			'container': '.ad-banner-one-wrap .wpfWoofiltersWidget',
 			'containerPosition': 0,
 			'addClass': true,
@@ -172,7 +171,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			'check': ['.ad-banner-one-wrap .wpfWoofiltersWidget'],
 			'checkLimit': 0
 		},
-		{
+		{ // element transfer
 			'container': '#main',
 			'containerPosition': 0,
 			'element': '.ad-banner-one-wrap .wpfWoofiltersWidget',
@@ -182,7 +181,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			'check': ['form.woocommerce-ordering', '.ad-banner-one-wrap .wpfWoofiltersWidget'],
 			'checkLimit': 0
 		},
-		{
+		{ // element transfer
 			'container': '#main',
 			'containerPosition': 0,
 			'element': 'nav.woocommerce-pagination',
@@ -190,8 +189,8 @@ window.addEventListener('DOMContentLoaded', function () {
 			'check': ['nav.woocommerce-pagination'],
 			'checkLimit': 0
 		},
-		/** Remove breadcrumbs from main & support pages */
-		{
+		/** Remove breadcrumbs from the main & support pages */
+		{	 // home page
 			'container': '#primary > div.breadcrumb > span',
 			'containerPosition': 0,
 			'addClass': true,
@@ -199,7 +198,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			'check': ['body.home'],
 			'checkLimit': 0
 		},
-		{
+		{ // regular pages
 			'container': '#main header div.breadcrumb',
 			'containerPosition': 0,
 			'addClass': true,
@@ -207,13 +206,13 @@ window.addEventListener('DOMContentLoaded', function () {
 			'check': ['.page-template-default'],
 			'checkLimit': 0
 		},
-		{
+		{ 	// breadcrumb text correction
 			'container': '#primary div.breadcrumb span:first-child',
 			'containerPosition': 0,
 			'addText': true,
 			'content': ''
 		},
-		{
+		{	// footer correction
 			'container': 'footer .copyright',
 			'containerPosition': 0,
 			'deleteNum': [2, 2, 3],
