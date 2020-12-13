@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function () {
 	const productData = [
-		{
+		{	// hide the sidebar
 			'container': 'aside#secondary',
 			'containerPosition': 0,
 			'addClass': true,
@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			'check': ['body.product-template-default'],
 			'checkLimit': 0
 		},
-		{ //H1 container & stars for mobile
+		{ // h1 container & stars for mobile
 			'container': '.product.type-product',
 			'containerPosition': 0,
 			'element': '',
@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			}]
 		},
 		{
-			'container': '.product.type-product', //H1 for mobile
+			'container': '.product.type-product', // h1 for mobile
 			'containerPosition': 0,
 			'element': '.summary.entry-summary > h1',
 			'before': '.woocommerce-product-gallery',
@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			'check': ['body.product-template-default'],
 			'checkLimit': 0
 		},
-		{ //share box
+		{ // messenger box & main info container
 			'container': '.summary.entry-summary',
 			'containerPosition': 0,
 			'element': '',
@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded', function () {
 							</span>
 						</a>
 					</div>`,
-			}, {
+			}, { // share box header
 				'container': 'div.share-box-wmj',
 				'containerPosition': 0,
 				'element': '',
@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				'create': 'p',
 				'class': ['share-box-wmj-header'],
 				'innerText': 'Сохранить этот мотор:',
-			}, {
+			}, { // share box part 1
 				'container': 'div.share-box-wmj',
 				'containerPosition': 0,
 				'element': '',
@@ -87,7 +87,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				'class': '',
 				'attribute': ['src'],
 				'attributeValue': ['https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js']
-			}, {
+			}, { // share box part 2
 				'container': 'div.share-box-wmj',
 				'containerPosition': 0,
 				'element': '',
@@ -97,7 +97,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				'class': '',
 				'attribute': ['src'],
 				'attributeValue': ['https://yastatic.net/share2/share.js']
-			}, {
+			}, { // yandex share box 
 				'container': 'div.share-box-wmj',
 				'containerPosition': 0,
 				'element': '',
@@ -109,7 +109,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				'attributeValue': ['vkontakte,facebook,odnoklassniki,twitter,viber,whatsapp,telegram']
 			},]
 		},
-		{ //stars is not exist
+		{ //if stars is not exist
 			'container': '.summary.entry-summary',
 			'containerPosition': 0,
 			'element': '.comment-form-rating',
@@ -141,7 +141,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				'class': ''
 			}]
 		},
-		{ //stars is exist
+		{ //if stars is exist
 			'container': '.summary.entry-summary',
 			'containerPosition': 0,
 			'element': '.woocommerce-product-rating',
@@ -165,7 +165,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				'class': ''
 			}]
 		},
-		{ //Remove "your rate" from mobile
+		{ // Remove "your rate" from mobile
 			'container': '.comment-form-rating label',
 			'containerPosition': 0,
 			'addClass': true,
@@ -173,7 +173,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			'check': ['body.product-template-default'],
 			'checkLimit': 0
 		},
-		{ //Remove "your rate" from desktop
+		{ // Remove "your rate" from desktop
 			'container': '.comment-form-rating label',
 			'containerPosition': 1,
 			'addClass': true,
@@ -207,7 +207,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			],
 			'checkLimit': 0
 		}, */
-		{ //back arrow
+		{ // back arrow
 			'container': '.product.type-product .woocommerce-product-gallery',
 			'containerPosition': 0,
 			'element': '',
@@ -229,7 +229,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				'class': ''
 			}]
 		},
-		{ //forward arrow
+		{ // forward arrow
 			'container': '.product.type-product .woocommerce-product-gallery',
 			'containerPosition': 0,
 			'element': '',
@@ -251,7 +251,7 @@ window.addEventListener('DOMContentLoaded', function () {
 				'class': ''
 			}]
 		},
-		{
+		{ // event for back arrow
 			'event': true,
 			'type': 'click',
 			'container': 'div.backarrow-wmj',
@@ -268,7 +268,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			'checkLength': ['.flex-control-nav.flex-control-paging li'],
 			'checkLengthLimit': 1
 		},
-		{
+		{ // event for forward arrow
 			'event': true,
 			'type': 'click',
 			'container': 'div.forwarrow-wmj',
@@ -285,7 +285,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			'checkLength': ['.flex-control-nav.flex-control-paging li'],
 			'checkLengthLimit': 1
 		},
-		{
+		{ // show navigation arrows on the gallery images 
 			'event': true,
 			'type': 'mouseenter',
 			'container': '.product.type-product .woocommerce-product-gallery',
@@ -297,7 +297,7 @@ window.addEventListener('DOMContentLoaded', function () {
 			'checkLength': ['.flex-control-nav.flex-control-paging li'],
 			'checkLengthLimit': 1
 		},
-		{
+		{ // hide nav arrows on the gallery images
 			'event': true,
 			'type': 'mouseleave',
 			'container': '.product.type-product .woocommerce-product-gallery',
@@ -309,8 +309,8 @@ window.addEventListener('DOMContentLoaded', function () {
 			'checkLength': ['.flex-control-nav.flex-control-paging li'],
 			'checkLengthLimit': 1
 		},
-		{
-			'container': '', //
+		{ // create star rating if it is not exist
+			'container': '',
 			'containerPosition': 0,
 			'element': '',
 			'before': '#main ul.products',
