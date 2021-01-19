@@ -15,9 +15,9 @@
 
 Скрипт изменяет расположение элементов на страницах шаблона после постройки DOM-дерева.
 **Было:**
-![shoppingcart-before](//shoppingcart-before.png)
+![shoppingcart-before](shoppingcart-before.png)
 **Стало:**
-![shoppingcart-after](//shoppingcart-after.png)
+![shoppingcart-after](shoppingcart-after.png)
 
 Ничто не мешает скрипту работать на любом другом wordpress-шаблоне.
 
