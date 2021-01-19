@@ -191,7 +191,6 @@ class Changer {
 
 	// переключатель класса
 	toggleClass() {
-		console.log(document.querySelector(this.event.eventFor))
 		this.listenerElement = document.querySelector(this.event.eventFor);
 		this.listenerElement.classList.toggle(this.event.toggleClass);
 	}

@@ -57,12 +57,12 @@ window.addEventListener('DOMContentLoaded', function () {
 				'class': ['messengerbox-wmj'],
 				'insertHTML': `<p class='messenger-box-head-wmj'>Узнайте больше о товаре:</p>
 					<div class="messenger-box-inner-wmj">
-						<a id="mainpage-vibercontainer" href="//add?number=79264028318" alt="Viber">
+						<a id="mainpage-vibercontainer" href="//add?number=" alt="Viber">
 							<span class="mainpage-viber-inner">
 							<img src="/wp-content/uploads/2020/03/vibico.png" alt="Viber">
 							</span>
 						</a>
-						<a id="mainpage-wacontainer" href="https://wa.me/79264028318" alt="WhatsApp">
+						<a id="mainpage-wacontainer" href="https://wa.me/" alt="WhatsApp">
 							<span class="mainpage-wa-inner">
 							<img src="/wp-content/uploads/2020/03/whatico.png" alt="WhatsApp">
 							</span>
