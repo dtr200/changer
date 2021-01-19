@@ -15,7 +15,7 @@
 
 Скрипт изменяет расположение элементов на страницах шаблона после постройки DOM-дерева.  
 
-**Было:(без кастомных css)**
+**Было(без кастомных css):**
 
 ![shoppingcart-before](shoppingcart-before.png)
 
@@ -47,7 +47,7 @@
 В зависимости от того, на странице продукта нужен новый элемент или в другом месте, необходимо добавить javascript-объект в product-changes.js или changes.js соответственно.
 
 ```javascript
-    {
+	{
         'container': '.new',
         'containerPosition': 0,
         'element': '',
@@ -128,7 +128,7 @@ containerPosition - если контейнеров несколько, тогд
 			'containerPosition': 0,
 			'element': '.search',
 			'clone': true
-        },
+        }
 ```
 #### Перенести элемент
 
