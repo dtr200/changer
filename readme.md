@@ -15,7 +15,7 @@
 
 Скрипт изменяет расположение элементов на страницах шаблона после постройки DOM-дерева.  
 
-**Было:**
+**Было:(без кастомных css)**
 
 ![shoppingcart-before](shoppingcart-before.png)
 
@@ -48,21 +48,21 @@
 
 ```javascript
     {
-			'container': '.new',
-			'containerPosition': 0,
-			'element': '',
-            'before': '',
-            'beforePosition': 0,
-			'create': 'button',
-			'id': 'new__id',
-			'class': '',
-			'attribute': ['type'],
-            'attributeValue': ['submit'],
-            'clone': false,
-            'insertHTML': '<div></div>',
-            'ul': '.ul',
-            'categoryLi': '.product',
-            'checkUL': '.product-list'
+        'container': '.new',
+        'containerPosition': 0,
+        'element': '',
+        'before': '',
+        'beforePosition': 0,
+        'create': 'button',
+        'id': 'new__id',
+        'class': '',
+        'attribute': ['type'],
+        'attributeValue': ['submit'],
+        'clone': false,
+        'insertHTML': '<div></div>',
+        'ul': '.ul',
+        'categoryLi': '.product',
+        'checkUL': '.product-list'
 	}
 ```
 container - Элемент внутри которого будет создан новый элемент.  
@@ -116,7 +116,7 @@ containerPosition - если контейнеров несколько, тогд
 			'create': 'div',
 			'class': ['one', 'two'],
 			'insertHTML': '<span></span>'
-		}
+        }
 ```
 #### Копировать элемент
 
@@ -128,7 +128,7 @@ containerPosition - если контейнеров несколько, тогд
 			'containerPosition': 0,
 			'element': '.search',
 			'clone': true
-		},
+        },
 ```
 #### Перенести элемент
 
@@ -141,7 +141,7 @@ containerPosition - если контейнеров несколько, тогд
 			'element': '.search',
 			'before': '.header',
 			'beforePosition': 0
-		}
+        }
 ```
 <a name="inst">
 
